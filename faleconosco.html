@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+        <head>
+              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	          <title>Trabalho 28.11.2019</title>
+              <meta charset="utf-8"/>
+        </head>
+        <body> 
+        <header>
+                        <nav class="navbar navbar-dark bg-dark">
+                            <a class="navbar-brand" href="index_exe.html"><img src="img/logobranca.png"/></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="index_exe.html">Início <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="faleconosco.html">Fale Conosco</a>
+                                </li>
+                              </ul>
+                              <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                              </form>
+                            </div>
+                        </nav>
+         </header>            
+	
+        <section>
+       
+               <h3>Deixem seus elegios ou reclamações.</h3>
+                Os campos marcados com *, são preenchimento obrigatório.
+                <form name="falecom" id="falecom" action="mandaForm.php" method="get">
+                <p><label for="nomeuser"> Nome</label><br/>
+                <input type="text" name= "nomeuser" id="nomeuser" size= "45" required/></p>
+                
+                <form cpf="falecom" id="falecom" action="mandaForm.php" method="get">
+                <p><label for="nomeuser"> CPF.</label><br/>
+                <input type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00"></p>
+                
+                <form tel="falecom" id="falecom" action="mandaForm.php" method="get">
+                <p><label for="nomeuser"> TEL:</label><br/>
+                <input type="text" class="form-control cel-sp-mask" placeholder="Ex.: (00) 00000-0000">
+
+                <p><label for="mailuser">E-mail</label><br/>
+                <input type="email"name="mailuser" id="mailuser" size="45" required/></p>
+                
+                <p>Sexo:<br/>
+                <input type="radio" name="sexo" volue="Feminino"/> Feminino<br/>
+                <input type="radio" name="sexo" value="Masculino"/> Masculino</br></p>
+                <p><label for="datanasc"> Data de Nascimento:</label><br/>
+                <input type="date" name="datanasc" id"datanasc" /></p>
+
+
+                <p><label>Assunto:</label><br/>
+                <select name="assunto">
+                <option value="Iniciar ação">iniciar ações</option>
+                <option value="Elogios">Elogios</option>
+                <option value="Sugestões">Sugestôes</option>
+                <option value="Reclamações">Reclamações</option>
+                </select>
+
+
+                <p><label>Mensagem:</label><br/>
+                <textarea name="mensagem" cols="40" rows="10"></textarea></p>
+                <input type="submit" value="Enviar" id="btnenviar"/>		 
+        </section>
+        <footer class="container">
+                <p class="float-right"><a href="#">Back to top</a></p>
+                <p>&copy; 2019 Company, Inc. &middot; <a href="faleconosco.html">Fale Conosco</a> &middot;</p>
+        </footer>
+        </body>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
